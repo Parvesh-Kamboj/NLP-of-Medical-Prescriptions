@@ -1,5 +1,6 @@
 # NLP-of-Medical-Prescriptions
 NLP of Medical prescriptions and then applying regression models to predict base scores for patients
+
 Few important things about code:
 1. I have transformed “name_of_drug” and “use_case_for_drug” using target based encoding along with Laplace smoothing. Laplace smoothing has a weight parameter which can also be hyper-tunned.
 2. The “use_case_for_drug” has some weird texts, we can either replace the weird text with the new category(example “NA”) or we can actually replace them with the mode of “use_case_for_drug” grouped over “ name_of_drug”. For simplicity I have utilised the first method.  
